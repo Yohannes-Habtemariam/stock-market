@@ -1,0 +1,121 @@
+.footer {
+  background-color: #000000e2;
+  width: 100%;
+  margin: auto;
+  color: white;
+  padding-top: 1rem;
+}
+
+/* .footer-social-media {
+    background-color: #fffff0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem 1rem 0 0;
+} */
+
+.footer-icons {
+  color: green;
+}
+.footer-icons:hover {
+  color: yellowgreen;
+}
+
+.footer-navigation {
+    margin-left: 3rem;
+}
+.footer-company-history h3 {
+  font-size: 1.8rem;
+}
+
+.footer-company-history li {
+  list-style: none;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+
+.footer-company-history li a {
+  text-decoration: none;
+  padding-left: rem;
+  color: white;
+}
+
+.footer-company-history li a:hover {
+  text-decoration: none;
+  color: red;
+  transition: 0.5s;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  background-color: #778899;
+  text-align: center;
+}
+
+.footer-copyright .copyright {
+  color: white;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.footer-logo {
+  padding-top: 0.3rem;
+}
+
+.footer-copyright .footer-logo img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.footer-logo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+}
+
+.footer-logo p a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-logo img:hover {
+  box-shadow: 1px 2px 5px blue;
+  transition: 0.5s;
+}
+
+.footer-logo p a:hover {
+  color: blue;
+  transition: 0.4s;
+}
+
+.fa-brands {
+  font-size: 5rem;
+  padding-left: 5rem;
+}
+
+@media screen and (min-width: 960px) {
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+  }
+}

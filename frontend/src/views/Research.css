@@ -1,0 +1,78 @@
+.research-container {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem 0;
+}
+
+.research-title {
+  text-align: center;
+  font-size: 3rem;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+.each-research-text {
+  background-color: #fffafa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+}
+
+.each-research-text img {
+  width: 60%;
+  height: 15rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.each-research-text img:hover {
+  box-shadow: 2px 3px 5px blue;
+  transition: 0.5s;
+}
+
+.each-research-text div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.each-research-text h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.each-research-text p {
+  font-size: 1.4rem;
+  padding: 0 1rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.each-research-text ol li {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.each-research-text ol li a {
+  text-decoration: none;
+}
+
+.each-research-text ol li a:hover {
+  color: red;
+}
+
+@media screen and (min-width: 960px) {
+  .research-text {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .each-research-text {
+    width: 32%;
+  }
+}

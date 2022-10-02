@@ -1,0 +1,209 @@
+.contact-form-container {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    background-color:	#f0ffff;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2px;
+    padding: 1rem 0;
+  }
+  
+  .contact-form-container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .contact-form-container p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .contact-form{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .contact-form-input-container {
+    display: block;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-form-input-container input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+  }
+
+  .contact-form-input-container input:focus,
+  .contact-form-textarea-container textarea:focus
+   {
+      outline: solid blueviolet;
+    }
+  
+  .contact-form-textarea-container {
+    margin-top: 2rem;
+  }
+
+  .contact-form-textarea-container textarea{
+    width: 99%;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .contact-submit-btn {
+    width: 7rem;
+    margin-left: 5rem;
+    font-size: 1.6rem;
+    background-color: green;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .contact-submit-btn:hover {
+    background-color: greenyellow;
+    color: black;
+  }
+  
+  .client-comment-container{
+    background-color:	#f0f8ff;
+  }
+
+  .comment {
+    list-style: none;
+  }
+
+  .client-comment-section .comment-textarea p {
+    text-align: justify;
+    padding-right: 1rem;
+  }
+
+
+  .errorVisible {
+    display: block;
+    color: red;
+    margin-top: -0.8rem;
+  }
+  
+  .errorInvisible {
+    display: none;
+  }
+
+  
+  @media screen and (min-width: 960px) {
+
+    .contact-form-input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 5rem);
+      column-gap: 3rem;
+    }
+
+    .client-comment-container{
+      width: 95%;
+      margin: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 1px;
+      margin-top: 2rem;
+    }
+    .client-comment-container ul{
+      width: 95%;
+      margin: auto;
+      padding-left: 0%;
+    }
+  
+    .client-comment-section {
+      width: 100%;
+      display: auto;
+      display: grid;
+      grid-template-columns: 1fr 15rem 15rem 15rem 2rem;
+      grid-template-rows: 1fr;
+    }
+  
+    .client-comment-section-title {
+      width: 95%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 15rem 15rem 15rem;
+      grid-template-rows: 1fr;
+    }
+
+    .span-section {
+      margin-right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+    }
+
+    .client-comment-section .span-section span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+   }
+
+   .client-comment-section .span-section span:hover {
+    color: red;
+    font-weight: bold;
+   }
+
+   .client-comment-section .full-name,
+   .client-comment-section .telephone,
+   .client-comment-section .emailAddress
+    {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .client-comment-section .emailAddress
+    {
+     
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+
+   .client-comment-section .emailAddress:hover
+   {
+    
+     color: red;
+     text-decoration: none;
+     cursor: pointer;
+  }
+
+
+   .client-comment-section .telephone
+    {
+     
+      color: rgb(0, 174, 255);
+      text-decoration: underline;
+   }
+
+
+   .client-comment-section .full-name
+    {
+     
+      color: rgb(99, 49, 149);
+   }
+
+   .client-comment-section .full-name p,
+   .client-comment-section .telephone p,
+   .client-comment-section .emailAddress p
+    {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+  }

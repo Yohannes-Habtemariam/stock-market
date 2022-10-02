@@ -1,0 +1,63 @@
+.contacts-container {
+  width: 90%;
+  margin: 2rem auto;
+  background-color:	#f8f8ff;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 0 1px;
+}
+
+.contacts-container h1 {
+  color: green;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-details{
+  width: 80%;
+  margin: auto;
+  line-height: 2rem;
+}
+
+.contact-means {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-details h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details li {
+  list-style: none;
+}
+
+.contact-details li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.contact-details li a:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.contact-detail-icons {
+  color: blue;
+  font-size: 3rem;
+}
+
+.contact-detail-icons:hover {
+  color: olivedrab;
+}
+
+@media screen and (min-width: 960px) {
+
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+}

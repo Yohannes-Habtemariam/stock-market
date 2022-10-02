@@ -1,0 +1,389 @@
+body {
+  background-color: #f8f8ff;
+}
+
+.service-page-container {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem 2rem 2rem 3rem;
+  background-color: #f8f8ff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1px;
+  position: relative;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  color: green;
+}
+
+.welcome-title {
+  text-align: left;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(86, 86, 156);
+}
+
+
+.service-paragraph {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.service-unordered-list {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  list-style-type: circle;
+  color: blue;
+  margin: 2rem;
+}
+
+.service-form {
+  display: flex;
+}
+
+.service-page-service-form
+.service-page-select-specific-service {
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.service-page-service-btn {
+  font-size: 1.5rem;
+  background-color: #f0ffff;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.service-page-service-btn:hover {
+  background-color: rgb(145, 247, 254);
+  transition: 0.5s;
+}
+
+.service-image img {
+  position: absolute;
+  top: 22rem;
+  right: 6rem;
+  border-radius: 1rem;
+  width: 700px;
+}
+
+
+.comment-textarea-container{
+  margin-top: 1rem;
+}
+.comment-textarea-container textarea{
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.service-comment-submit-btn,
+.service-comment-delete-btn  {
+  font-size: 1.5rem;
+  background-color: #f0ffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+}
+
+.service-comment-delete-btn {
+  margin-left: 2rem;
+  padding: 0.4rem;
+}
+
+
+.service-comment-submit-btn:hover {
+  background-color: rgb(145, 247, 254);
+  transition: 0.5s;
+}
+
+.service-comment-delete-btn:hover{
+  background-color: rgb(254, 145, 229);
+  transition: 0.5s;
+}
+
+.comment-container{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+.close-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0.5rem 3rem;
+  background-color: yellowgreen;
+  padding: 2px 0.5rem;
+  font-size: 1.3rem;
+}
+
+.close-comment span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.constructive-comments {
+  margin: 2rem 0;
+}
+
+.constructive-comments h2 {
+  margin: 2rem 0;
+}
+
+/* Client Logout button */
+
+.clientLogout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 2rem;
+}
+
+
+.clientLogout button, .deregister-client button {
+  font-size: 1.5rem;
+  background-color: #f0ffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+}
+ 
+.clientLogout button:hover
+{
+  background-color: orange;
+  transition: 0.5s;
+}
+
+.deregister-client button:hover
+{
+  background-color: rgb(242, 76, 145);
+  transition: 0.5s;
+}
+
+.logout-deregister {
+  display: flex;
+  justify-content: end;
+}
+
+/* Login Form*/
+
+.form-footer-service-container {
+  width: 35%;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 0.5rem;
+  padding: 1.5rem 0;
+}
+
+.login-service-form {
+  width: 90%;
+  margin: auto;
+  border: none; 
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 0.5rem;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.login-service-form legend {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 0.3rem;
+}
+
+.login-service-form input {
+  display: block;
+  width: 94%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: white;
+}
+
+.login-service-form p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.login-service-form button {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  background: orange;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-service-form button:hover {
+  background: rgba(45, 233, 217, 0.966);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.blog-social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-social-media a {
+  padding-left: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.fab:hover {
+  color: orange;
+  transition: 0.2s;
+}
+
+.errorVisible {
+  display: block;
+  color: red;
+}
+
+.errorInvisible {
+  display: none;
+}
+
+/* Sign Up Form  */
+
+.sign-form-container {
+  width: 35%;
+  margin: 2rem auto;
+  background-color: #e6e6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+  padding: 2rem 0;
+}
+
+.signUp-form {
+  width: 90%;
+  margin: auto;
+  border: none; 
+  border-radius: 0.5rem;
+}
+
+.signUp-form legend {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0.5rem;
+  color: black;
+  border-radius: 0.3rem;
+}
+
+.signUp-form input {
+  display: block;
+  width: 94%;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  color: rgb(51, 13, 241);
+  background-color: #f0ffff;
+}
+
+.signUp-form label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.signUp-form input:focus {
+  outline: 2px solid rebeccapurple;
+}
+
+.signUp-form button {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #b0c4de;
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.signUp-form button:hover {
+  background: rgba(45, 233, 217, 0.966);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.signUp-form .login-btn {
+  width: 90%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.admin-btn {
+  font-size: 1.5rem;
+  background-color: #f0ffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  padding: 0.4rem;
+}
+
+.admin-btn:hover {
+  background-color: yellowgreen;
+  transition: 0.5s;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .form-footer-service-container {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 0.5rem;
+    
+  }
+  
+}
+
+
+/* Phone */
+
+@media screen and (max-width: 670px) {
+  .form-footer-service-container {
+    width: 95%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 0.5rem;
+  }
+
+  .blog-social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem;
+  }
+  
+  .fab {
+    font-size: 2rem;
+  }
+}
+

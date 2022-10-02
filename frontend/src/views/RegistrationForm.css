@@ -1,0 +1,394 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.registration-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.registration-form-container h1 {
+    text-align: center;
+    color: #008000;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.registration-form-container p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+.registration-form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to right,
+        rgba(144, 144, 196, 0.548),
+        rgb(184, 172, 152),
+        rgb(177, 151, 177),
+        rgb(158, 184, 158),
+        rgb(212, 203, 203),
+        rgb(169, 132, 196),
+        #99c5bc,
+        lightblue,
+        gray
+    );
+    border-radius: 1rem;
+    box-shadow: 0 0 1px;
+    margin: 0 auto;
+}
+
+.registration-form legend {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 3rem;
+    color: blue;
+    font-weight: bold;
+  }
+
+
+.registration-form .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 1rem 2rem;
+    margin: auto;
+}
+
+  .biodata label{
+    display: block;
+  }
+  .biodata input{
+    display: block;
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .biodata select{
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .telephone label{
+    display: block;
+  }
+  .telephone input{
+    display: block;
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .country label{
+    display: block;
+  }
+  .country input{
+    display: block;
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .messages{
+    display: none;
+  }
+
+  .attach-files label{
+    display: block;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .attach-files input{
+    display: block;
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .reset p{
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .registration-form input, select{
+    border-radius: 2rem;
+  }
+
+  .agree button{
+    width: 90%;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .agree button:hover{
+      background-color: lightgreen;
+    }
+
+    .errorVisible {
+      display: block;
+      color: red;
+    }
+
+    .errorInvisible {
+      display: none;
+    }
+ 
+ /*    Tablet and Desktop media query*/
+
+
+ @media screen and (min-width: 960px)  {
+    .registration-form-container p {
+       width: 90%;
+       margin: auto;
+    }
+
+    .registration-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        box-shadow: 0 0 1px;
+      }
+
+      .registration-form legend {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+        color: blue;
+        font-weight: bold;
+      }
+      
+      .registration-form .form {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3, 1fr;
+        column-gap: 5rem;
+        row-gap: 1rem;
+        font-size: 1.3rem;
+        margin: 0 2rem;
+        padding-bottom: 2rem;
+      }
+      
+    .biodata {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .telephone {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .language {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .messages {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .attach-files {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .agree {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .biodata label{
+        display: block;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    .biodata input{
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 2rem;
+        background-color: rgb(240, 247, 250);
+      }
+      .biodata input:hover {
+        outline: 1px solid blue;
+        background-color: lightblue;
+      }
+
+    .biodata select {
+        display: block;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 2rem;
+        background-color: rgb(240, 247, 250);
+      }
+    
+    .biodata select:hover {
+        outline: 1px solid blue;
+        background-color: rgb(212, 242, 252);
+    }
+
+    .telephone label {
+        display: block;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    .telephone input {
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 2rem;
+        background-color: rgb(240, 247, 250);
+    }
+
+    .telephone input:hover {
+        outline: 1px solid blue;
+        background-color: rgb(212, 242, 252);
+    }
+
+    .language p {
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .language input {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .country label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .country input {
+        padding: 0.5rem;
+        width: 100%;
+        background-color: rgb(240, 247, 250);
+    }
+
+    .courses p {
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .courses input {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .form .messages {
+        display: block;
+    }
+
+    .form .messages label {
+        font-weight: bold;
+    }
+
+    .form .messages textarea{
+        padding: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: rgb(240, 247, 250);
+    }
+
+    .form .messages textarea:focus{
+        outline: 1px solid blue;
+        background-color: rgb(227, 233, 235);
+    }
+
+    .form.attach-files label {
+        font-weight: bold;
+    }
+
+    .form .attach-files input[type="file"] {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .form.reset p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .form .reset button {
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        background: lightblue;
+        padding: 0.5rem;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .form .reset button:hover {
+        color: blue;
+        background: orange;
+    }
+
+     .form .agree {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+     .form .agree input[type="checkbox"] {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+     .form .agree label {
+        font-size: 1.2rem;
+        padding-right: 0;
+    }
+
+     .submit button{
+        width: 25%;
+        font-size: 1.7rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        border-radius: 0.7rem;
+        background: gold;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .submit button:hover{
+        background-color: greenyellow;
+    }
+
+    input, textarea {
+        font-size: 1.2rem;
+    }
+
+    .errorVisible {
+      display: block;
+      color: red;
+    }
+
+    .errorInvisible {
+      display: none;
+    }
+}
+
